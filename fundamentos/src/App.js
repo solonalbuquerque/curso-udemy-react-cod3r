@@ -4,6 +4,7 @@ import ComParametro from './components/basicos/ComParametro';
 import { Aleatorio } from './components/basicos/Aleatorio';
 import { Card } from './components/layout/Card';
 import { Familia } from './components/basicos/Familia';
+import { FamiliaMembro } from './components/basicos/FamiliaMembro';
 
 export default () => {
   return (
@@ -11,7 +12,10 @@ export default () => {
       <div className="Cards">
       
         <Card titulo="#05 - Família" cor="#DE3163">
-          <Familia sobrenome="Silva" />
+          <Familia sobrenome="Silva">
+            <FamiliaMembro nome="José" />
+            <FamiliaMembro nome="Maria" />
+          </Familia>
         </Card>
       
         <Card titulo="#04 - Desafio Aleatório" cor="#FFBF00">

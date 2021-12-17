@@ -1,15 +1,19 @@
 import * as React from 'react';
-import { FamiliaMembro } from './FamiliaMembro';
 
 export const Familia = (props) => {
 
-  const {sobrenome} = props;
-
   return (
     <div>
-      <FamiliaMembro nome="Pedro" sobrenome={sobrenome} />
-      <FamiliaMembro nome="José" {...props} />
-      <FamiliaMembro nome="Maria" sobrenome="Ferreira" />
+      {
+        // um elemento só (não é legal)
+        // React.cloneElement(props.children, {...props})
+
+        // várias elementos (o correto)
+        React.Children.map(props.children, child => {
+          return React.cloneElement(child, props);
+        })
+        
+      }
     </div>
   );
 };
