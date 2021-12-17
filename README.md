@@ -6,3 +6,6 @@
 - Emulador de terminal - cmder.net
 - Visual Studio Code
 - Github Desktop
+
+# Dicas
+- `ALT + Shift + F` para formatar automaticamente o documento
