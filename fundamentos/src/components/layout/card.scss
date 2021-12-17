@@ -1,14 +1,16 @@
 .Card {
-  background-color: cadetblue;
+  background-color: transparent;
   margin:10px 10px;
-  border:3px solid cadetblue;
+  border:3px solid transparent;
   border-radius: 10px;
   overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  width: 270px;
   .titulo{
-    background-color: cadetblue;
+    background-color: transparent;
     color: white;
     padding:5px;
-    margin-bottom: 10px;
     display:flex;
     justify-content: center;
   }
@@ -17,5 +19,6 @@
     color: black;
     padding:10px;
     font-size:14px;
+    flex:1;
   }
 }

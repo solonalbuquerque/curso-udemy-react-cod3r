@@ -9,3 +9,4 @@
 
 # Dicas
 - `ALT + Shift + F` para formatar automaticamente o documento
+- `{...props}` é o spreed dentro de um componente que passa todos os atributos direto
