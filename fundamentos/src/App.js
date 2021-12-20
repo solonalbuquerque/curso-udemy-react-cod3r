@@ -9,11 +9,16 @@ import { ListaAlunos } from './components/repeticao/ListaAlunos';
 import { TabelaProdutos } from './components/repeticao/TabelaProdutos';
 import { ParOuImpar } from './components/condicional/ParOuImpar';
 import { UsuarioInfo } from './components/condicional/UsuarioInfo';
+import { DiretaPai } from './components/comunicacao/DiretaPai';
 
 export default () => {
   return (
     <div className="App">
       <div className="Cards">
+      
+        <Card titulo="#09 - Comunicação Direta" cor="#000080">
+          <DiretaPai />
+        </Card>
 
         <Card titulo="#08 - Par ou ímpar" cor="#008080">
           <ParOuImpar numero={2} />
