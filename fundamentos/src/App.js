@@ -10,11 +10,16 @@ import { TabelaProdutos } from './components/repeticao/TabelaProdutos';
 import { ParOuImpar } from './components/condicional/ParOuImpar';
 import { UsuarioInfo } from './components/condicional/UsuarioInfo';
 import { DiretaPai } from './components/comunicacao/DiretaPai';
+import { IndiretaPai } from './components/comunicacao/IndiretaPai';
 
 export default () => {
   return (
     <div className="App">
       <div className="Cards">
+      
+        <Card titulo="#10 - Comunicação indireta" cor="#d1d100">
+          <IndiretaPai />
+        </Card>
       
         <Card titulo="#09 - Comunicação Direta" cor="#000080">
           <DiretaPai />
