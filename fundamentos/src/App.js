@@ -11,11 +11,22 @@ import { ParOuImpar } from './components/condicional/ParOuImpar';
 import { UsuarioInfo } from './components/condicional/UsuarioInfo';
 import { DiretaPai } from './components/comunicacao/DiretaPai';
 import { IndiretaPai } from './components/comunicacao/IndiretaPai';
+import { Input } from './components/formularios/Input';
+import Contador from './components/contador/Contador';
 
 export default () => {
   return (
     <div className="App">
       <div className="Cards">
+      
+        <Card titulo="#12 - Contador" cor="#424242">
+          <Contador numeroInicial={10} />
+          <Contador />
+        </Card>
+
+        <Card titulo="#11 - Input" cor="#d1d188">
+          <Input />
+        </Card>
       
         <Card titulo="#10 - Comunicação indireta" cor="#d1d100">
           <IndiretaPai />
